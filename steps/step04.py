@@ -55,13 +55,13 @@ dy = numerical_diff(f, x)
 print(dy)
 
 
-# 추가
+
 
 class AddOne(Function):
     def forward(self, x):
         return 1+ x
 
-def g(x): # (1+e^x)^2
+def g(x):
     A = Exp()
     B = AddOne()
     C = Square()
